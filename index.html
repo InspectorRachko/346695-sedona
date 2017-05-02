@@ -9,7 +9,7 @@
 
 <body>
   <header>
-    <nav>
+    <nav class="main_menu container">
       <ul>
         <li><a href="#">Информация</a></li>
         <li><a href="#">Фото и видео</a></li>
@@ -19,6 +19,7 @@
       </ul>
     </nav>
   </header>
+  <main class="container">
   <div class="main_picture">
     <img class="main_photo" src="img/main_photo.jpg" width="1200" height="509"  alt="Sedona">
   </div>
@@ -26,7 +27,7 @@
     <h1>Седона — небольшой городок в Аризоне, заслуживающий большего!</h1>
     <p>Рассмотрим 5 причин, по которым Седона круче, чем Гранд Каньон!</p>
   </div>
-  <div class="features_1">
+  <div class="features_1 clearfix">
     <div class="features_1_text">
       <h2>Настоящий городок</h2>
       <p>— №1 —</p>
@@ -53,7 +54,7 @@
       <p>Не только китайского, но и местного производства!</p>
     </div>
   </div>
-  <div class="features_3">
+  <div class="features_3 clearfix">
     <div class="features_3_picture">
       <img src="img/features_picture_2.jpg" width="800" height="256" alt="Мост дьявола">
     </div>
@@ -80,49 +81,52 @@
       <p>Большинство едет в Гранд Каньон и толпится там</p>
     </div>
   </div>
-  <div class="search_form_text">
+  <div class="search_form_menu">
     <h3>Заинтересовались?</h3>
     <p>Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне</p>
-    <div class="search_form_button">
-      <a href="#">Поиск Гостиницы в Седоне</a>
-    </div>
+    <a class="search_form_button" href="#">Поиск Гостиницы в Седоне</a>
   </div>
   <div class="map">
     <img class="map_picture" src="img/map.jpg" width="1200" height="593" alt="Карта">
   </div>
-  <footer>
-    <a href="#">#Visitsedona</a>
-    <div class="footer_social">
+  </main>
+  <footer class="main_footer">
+    <div class="footer_left">
+      <a href="#">#Visitsedona</a>
+    </div>
+    <div class="footer_middle">
       <a href="#" class="social_btn social_btn_twitter">twitter</a>
       <a href="#" class="social_btn social_btn_fb">fb</a>
       <a href="#" class="social_btn social_btn_youtube">youtube</a>
     </div>
-    <p>Website by</p>
+    <div class="footer_right">
+      <p>Website by</p>
       <a class="to_html_academy" href="#"> <img class="html_academy_logo" src="img/html_academy_logo.png" width="113" height="39" alt="HTML-Academy"></a>
+    </div>
+
   </footer>
 
   <div class="modal search_form">
-    <p>Дата заезда:</p>
-    <div class="form_date_1">
-      <p>24 апреля 2017</p>
+    <span>Дата заезда:</span>
+    <div class="form_date">
+      <span>24 апреля 2017</span>
       <a href="#"><img class="calendar_icon" src="img/calendar_icon.png" width="21" height="22" alt="Поиск"></a>
     </div>
-    <p>Дата выезда:</p>
-    <div class="form_date_2">
-      <p>4 июля 2017</p>
+    <span>Дата выезда:</span>
+    <div class="form_date">
+      <span>4 июля 2017</span>
         <a href="#"><img class="calendar_icon" src="img/calendar_icon.png" width="21" height="22" alt="Поиск"></a>
     </div>
-    <p>Взрослые:</p>
+    <span>Взрослые:</span>
     <div class="form_adults">
       <span>2</span>
     </div>
-    <p>Дети:</p>
-    <div class="form_adults">
+    <span>Дети:</span>
+    <div class="form_children">
       <span>0</span>
     </div>
-    <div class="form_commit">
-      <a href="#" class="form_commit_button">Найти</a>
-    </div>
+    <a class="search_form_commit" href="#">Найти</a>
+
   </div>
 
 </body>

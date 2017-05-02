@@ -9,7 +9,7 @@
 
 <body>
   <header>
-    <nav>
+    <nav class="main_menu container">
       <ul>
         <li><a href="#">Информация</a></li>
         <li><a href="#">Фото и видео</a></li>
@@ -19,7 +19,8 @@
       </ul>
     </nav>
   </header>
-  <div class="filter_layout">
+  <main class="container">
+  <div class="filter_layout clearfix">
     <form class="filter_window" action="#" method="post">
       <div class="features_checkbox">
         <h3 class="features_checkbox_header">Инфраструктура:</h3>
@@ -59,11 +60,11 @@
         </div>
         <div class="price_filter_range">
         </div>
+        <button type="submit" class="btn filter_commit">Показать</button>
       </div>
-      <button type="submit" class="btn filter_commit">Показать</button>
     </form>
   </div>
-  <div class="filter_results_top">
+  <div class="filter_results_top clearfix">
     <h2 class="filter_results_header">Найдено: 3</h2>
     <div class="filter_results_priority">
       <span>Сортировка:</span>
@@ -77,43 +78,48 @@
     </div>
   </div>
   <div class="filter_results_bottom">
-    <div class="filter_results_item">
+    <div class="filter_results_item clearfix">
       <img class="filter_results_picture" src="img/filter_results_picture_1.jpg" width="135" height="90" alt="Amar Resort">
       <h3>Amara Resort & SPA </h3>
       <span>Гостиница</span>
-      <span>От 4000 Р.</span>
+      <span class="crutch">От 4000 Р.</span>
       <a href="#" class="filter_results_more">Подробнее</a>
       <a href="#" class="filter_results_order">Забронировать</a>
-      <span>Рейтинг: 8,5</span>
+      <span class="rating">Рейтинг: 8,5</span>
     </div>
-    <div class="filter_results_item">
+    <div class="filter_results_item clearfix">
       <img class="filter_results_picture" src="img/filter_results_picture_2.jpg" width="135" height="90" alt="Desert Quail Inn">
       <h3>Desert Quaill Inn</h3>
       <span>Мотель</span>
-      <span>От 4000 Р.</span>
+      <span class="crutch">От 4000 Р.</span>
       <a href="#" class="filter_results_more">Подробнее</a>
       <a href="#" class="filter_results_order">Забронировать</a>
-      <span>Рейтинг: 8,5</span>
+      <span class="rating">Рейтинг: 8,9</span>
     </div>
-    <div class="filter_results_item">
+    <div class="filter_results_item clearfix">
       <img class="filter_results_picture" src="img/filter_results_picture_3.jpg" width="135" height="90" alt="Villas at Poco Diablo">
       <h3>Villas at Poko Diablo</h3>
       <span>Апартаменты</span>
-      <span>От 2000 Р.</span>
+      <span class="crutch">От 2000 Р.</span>
       <a href="#" class="filter_results_more">Подробнее</a>
       <a href="#" class="filter_results_order">Забронировать</a>
-      <span>Рейтинг: 8,5</span>
+      <span class="rating">Рейтинг: 9,2</span>
     </div>
   </div>
-  <footer>
-    <a href="#">#Visitsedona</a>
-    <div class="footer_social">
+  </main>
+  <footer class="main_footer">
+    <div class="footer_left">
+      <a href="#">#Visitsedona</a>
+    </div>
+    <div class="footer_middle">
       <a href="#" class="social_btn social_btn_twitter">twitter</a>
       <a href="#" class="social_btn social_btn_fb">fb</a>
       <a href="#" class="social_btn social_btn_youtube">youtube</a>
     </div>
-    <p>Website by</p>
-    <a class="to_html_academy" href="#"> <img class="html_academy_logo" src="img/html_academy_logo.png" width="113" height="39" alt="HTML-Academy"></a>
+    <div class="footer_right">
+      <p>Website by</p>
+      <a class="to_html_academy" href="#"> <img class="html_academy_logo" src="img/html_academy_logo.png" width="113" height="39" alt="HTML-Academy"></a>
+    </div>
 
   </footer>
 </body>
