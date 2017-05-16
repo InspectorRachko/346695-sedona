@@ -5,6 +5,7 @@ body {
   color: black;
   line-height: 24px;
   min-width: 1200px;
+  background-color: #f2f2f2;
 }
 
 h1 {
@@ -26,7 +27,7 @@ a {
 .container {
   margin: 0 auto;
   width: 1200px;
-  padding: 0 10px;
+  background-color: white;
 }
 
 .clearfix::after {
@@ -48,7 +49,7 @@ a {
 
 .header_logo {
   position: absolute;
-  left: 540px;
+  left: 531px;
   top: 0px;
   z-index: 1;
 }
@@ -149,7 +150,7 @@ a {
 }
 
 .features_1 {
-  margin-top: 52px;
+  margin-top: 51px;
 }
 
 .features_1_text {
@@ -163,7 +164,7 @@ a {
 .features_1_text h2 {
   width: 126px;
   font-size: 21px;
-  line-height: 21px;
+  line-height: 24px;
   text-transform: uppercase;
   font-weight: bold;
   margin: 0 auto;
@@ -177,7 +178,7 @@ a {
   display: block;
   text-align: center;
   vertical-align: middle;
-  margin-top: 27px;
+  margin-top: 22.5px;
 }
 
 .features_1_text p {
@@ -214,7 +215,7 @@ a {
   font-weight: bold;
   text-align: center;
   vertical-align: middle;
-  margin-top: 23px;
+  margin-top: 24px;
 }
 
 .features_2_text p {
@@ -224,7 +225,7 @@ a {
   line-height: 21px;
   text-transform: uppercase;
   margin: 0 auto;
-  margin-top: 24px;
+  margin-top: 27px;
   text-align: center;
 }
 
@@ -247,9 +248,10 @@ a {
   line-height: 21px;
   text-transform: uppercase;
   font-weight: bold;
-  margin-top: 53px;
+  margin-top: 54px;
   margin-left: 0px;
   white-space: pre-wrap;
+  margin-bottom: 29px;
 }
 
 .features_3_text p {
@@ -258,7 +260,7 @@ a {
   line-height: 21px;
   text-transform: uppercase;
   margin: 0 auto;
-  margin-top: 20px;
+  margin-top: 21px;
 }
 
 .features_3_text .number {
@@ -267,7 +269,7 @@ a {
   display: block;
   text-align: center;
   vertical-align: middle;
-  margin-top: 27px;
+  margin-top: 24px;
 }
 
 .features_3_picture {
@@ -292,7 +294,7 @@ a {
   text-transform: uppercase;
   font-weight: bold;
   margin: 0 auto;
-  margin-top: 46px;
+  margin-top: 49px;
   text-align: center;
 }
 
@@ -302,7 +304,7 @@ a {
   display: block;
   text-align: center;
   vertical-align: middle;
-  margin-top: 25px;
+  margin-top: 24px;
 }
 
 .features_4_text p {
@@ -311,7 +313,7 @@ a {
   line-height: 21px;
   text-transform: uppercase;
   margin: 0 auto;
-  margin-top: 20px;
+  margin-top: 24px;
   white-space: pre-wrap;
 }
 
@@ -324,17 +326,19 @@ a {
   font-size: 30px;
   line-height: 30px;
   text-transform: uppercase;
+  margin-top: 306px;
 }
 
 .search_form_menu p {
   font-size: 14px;
-  line-height: 22px;
-  margin-top: 0px;
+  line-height: 24px;
+  margin-top: -3px;
   text-transform: uppercase;
 }
 
 .search_form_button {
   display: block;
+  position: relative;
   width: 568px;
   height: 86px;
   margin: 0 auto;
@@ -350,6 +354,18 @@ a {
 
 .search_form_button:hover {
   background-color: #604e43;
+}
+
+.search_form_button::after {
+  content: "";
+  position: absolute;
+  top: -2080px;
+  right: -316px;
+  background: red;
+  width: 1199px;
+  height: 2764px;
+  box-shadow: 0px 0px 20px 0px #333;
+  z-index: -1;
 }
 
 .main_footer {
@@ -409,14 +425,15 @@ a {
 .search_form {
   position: absolute;
   width: 568px;
-  height: 400px;
+  height: 395px;
   top: 300;
   left: 316px;
-  padding-top: 58px;
+  padding-top: 54px;
   padding-left: 40px;
   box-sizing: border-box;
   background: white;
   box-shadow: 0 10px 25px rgba(41, 52, 73, .5);
+  text-align: left;
 }
 
 .search_form label {
@@ -432,17 +449,16 @@ a {
   height: 38px;
   background-color: #f2f2f2;
   box-sizing: border-box;
-  padding-left: 12px;
+  padding-left: 9px;
   text-transform: uppercase;
   font-size: 13px;
   line-height: 36px;
-  font-weight: 700;
   border: 3px solid #f2f2f2;
   outline: 0;
 }
 
 .in_date {
-  margin-bottom: 28px;
+  margin-bottom: 27px;
 }
 
 .in_date:hover, .out_date:hover, .adults:hover, .children:hover {
@@ -455,17 +471,20 @@ a {
 }
 
 .out_date {
-  margin-bottom: 31px;
+  margin-bottom: 30px;
 }
 
 .in_date_label {
   padding-right: 15px;
-  margin-left: -42px;
+  margin-left: 16px;
+  margin-top: 7px;
+  margin-right: 3px;
 }
 
 .out_date_label {
-  padding-right: 12px;
-  margin-left: -42px;
+  padding-right: 15px;
+  margin-left: 16px;
+  margin-top: 7px;
 }
 
 .form_date, .form_adults, .form_children {
@@ -473,14 +492,13 @@ a {
 }
 
 .form_adults label {
-  margin-left: -57px;
-  margin-right: 35px;
+  margin-right: 36px;
 }
 
 .form_adults {
   position: relative;
   margin-left: 14px;
-  margin-right: 45px;
+  margin-right: 47px;
 }
 
 .form_adults, .form_children {
@@ -492,7 +510,7 @@ a {
 }
 
 .form_children label {
-  margin-right: 20px;
+  margin-right: 23px;
 }
 
 .adults_plus, .children_plus {
@@ -507,7 +525,8 @@ a {
 
 .calendar_icon {
   position: absolute;
-  right: 50px;
+  right: 60px;
+  top: 6px;
   width: 30px;
   height: 30px;
 }
@@ -515,8 +534,8 @@ a {
 .calendar_icon:after {
   content: "";
   position: absolute;
-  top: 7px;
-  right: 15px;
+  top: 3px;
+  right: 3px;
   background: url("../img/sprite.png") no-repeat;
   width: 22px;
   height: 22px;
@@ -526,8 +545,8 @@ a {
 .calendar_icon:hover::after {
   content: "";
   position: absolute;
-  top: 7px;
-  right: 15px;
+  top: 3px;
+  right: 3px;
   background: url("../img/sprite.png") no-repeat;
   width: 22px;
   height: 22px;
@@ -537,8 +556,8 @@ a {
 .calendar_icon:active:after {
   content: "";
   position: absolute;
-  top: 7px;
-  right: 15px;
+  top: 3px;
+  right: 3px;
   background: url("../img/sprite.png") no-repeat;
   width: 22px;
   height: 22px;
@@ -550,12 +569,13 @@ a {
   height: 38px;
   background-color: #f2f2f2;
   box-sizing: border-box;
-  padding-left: 47px;
+  padding-left: 50px;
   text-transform: uppercase;
   line-height: 36px;
-  font-weight: 700;
+  font-weight: bold;
   border: 3px solid #f2f2f2;
   outline: 0;
+  font-size: 14px;
 }
 
 .children {
@@ -571,26 +591,26 @@ a {
 }
 
 .children_plus {
-  right: 1px;
+  right: 5px;
 }
 
 .adults_minus, .children_minus {
   position: absolute;
-  bottom: 3px;
-  left: 61px;
+  bottom: 4px;
+  left: 120px;
   width: 30px;
   height: 30px;
 }
 
 .children_minus {
-  left: 72px;
+  left: 71px;
 }
 
 .children_minus:after, .adults_minus::after {
   content: "";
   position: absolute;
-  top: 13px;
-  right: 8px;
+  top: 14px;
+  right: 10px;
   background: url("../img/sprite.png") no-repeat;
   width: 12px;
   height: 3px;
@@ -600,8 +620,8 @@ a {
 .children_minus:hover::after, .adults_minus:hover::after {
   content: "";
   position: absolute;
-  top: 13px;
-  right: 8px;
+  top: 14px;
+  right: 10px;
   background: url("../img/sprite.png") no-repeat;
   width: 12px;
   height: 3px;
@@ -611,8 +631,8 @@ a {
 .children_minus:active:after, .adults_minus:active::after {
   content: "";
   position: absolute;
-  top: 13px;
-  right: 8px;
+  top: 14px;
+  right: 10px;
   background: url("../img/sprite.png") no-repeat;
   width: 12px;
   height: 3px;
@@ -623,7 +643,7 @@ a {
   content: "";
   position: absolute;
   top: 10px;
-  right: 13px;
+  right: 10px;
   background: url("../img/sprite.png") no-repeat;
   width: 11px;
   height: 11px;
@@ -634,7 +654,7 @@ a {
   content: "";
   position: absolute;
   top: 10px;
-  right: 13px;
+  right: 10px;
   background: url("../img/sprite.png") no-repeat;
   width: 11px;
   height: 11px;
@@ -645,7 +665,7 @@ a {
   content: "";
   position: absolute;
   top: 10px;
-  right: 13px;
+  right: 10px;
   background: url("../img/sprite.png") no-repeat;
   width: 11px;
   height: 11px;
@@ -662,6 +682,7 @@ a {
   text-align: center;
   padding-right: 9px;
   padding-bottom: 3px;
+  padding-top: 1px;
   box-sizing: border-box;
   color: white;
   font-size: 19px;
@@ -684,6 +705,21 @@ a {
   background-color: #5496bd;
   color: #88b6d1;
   cursor: pointer;
+}
+
+.filter_window {
+  position: relative;
+}
+
+.filter_window::after {
+  content: "";
+  position: absolute;
+  top: -57px;
+  right: 1px;
+  width: 1200px;
+  height: 939px;
+  box-shadow: 0px 0px 20px 0px #333;
+  z-index: -1;
 }
 
 .filter_layout {
@@ -843,12 +879,6 @@ a {
   border-bottom: none;
 }
 
-.filter_results_bottom {
-  padding-right: 70px;
-  padding-left: 70px;
-  margin-bottom: 5px;
-}
-
 .filter_results_left {
   float: left;
 }
@@ -886,6 +916,7 @@ a {
 .filter_results_bottom {
   margin-top: 15px;
   padding: 0px;
+  padding-bottom: 5px;
 }
 
 .filter_results_item {
